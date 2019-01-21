@@ -10,6 +10,11 @@ module.exports = (sequelize, DataTypes) => sequelize.define(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    store_name: {
+      type: DataTypes.STRING,
+      allowNULL: false,
+      defaultValue: ''
+    },
     password: {
       type: DataTypes.STRING,
       allowNULL: false,
@@ -17,14 +22,17 @@ module.exports = (sequelize, DataTypes) => sequelize.define(
     longitude: {
       type: DataTypes.STRING,
       allowNULL: false,
+      defaultValue: ''
     },
     latitude:{
       type: DataTypes.STRING,
-      allowNULL: false
+      allowNULL: false,
+      defaultValue: ''
     },
     phone: {
       type: DataTypes.STRING,
-      allowNULL: false
+      allowNULL: false,
+      defaultValue: ''
     },
     created_at: DataTypes.DATE,
     updated_at: DataTypes.DATE,
