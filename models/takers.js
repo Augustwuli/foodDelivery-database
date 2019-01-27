@@ -10,6 +10,11 @@ module.exports = (sequelize, DataTypes) => sequelize.define(
       type: DataTypes.STRING,
       allowNULL: false,
     },
+    taker_name: {
+      type: DataTypes.STRING,
+      allowNULL: false,
+      defaultValue: ''
+    },
     password: {
       type: DataTypes.STRING,
       allowNULL: false,

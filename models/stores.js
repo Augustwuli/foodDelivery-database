@@ -15,6 +15,11 @@ module.exports = (sequelize, DataTypes) => sequelize.define(
       allowNULL: false,
       defaultValue: ''
     },
+    address: {
+      type: DataTypes.STRING,
+      allowNULL: false,
+      defaultValue: ''
+    },
     password: {
       type: DataTypes.STRING,
       allowNULL: false,
